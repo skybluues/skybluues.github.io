@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link
+    rel="stylesheet"
+    as="style"
+    onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+  />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style>
+    .prose {
+      color: #111618;
+    }
+    .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+      color: #111618;
+      font-weight: bold;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    .prose p {
+      margin-bottom: 1em;
+      line-height: 1.6;
+    }
+    .prose code {
+      background-color: #f0f3f4;
+      padding: 0.2em 0.4em;
+      border-radius: 0.25em;
+      font-size: 0.875em;
+    }
+    .prose pre {
+      background-color: #f0f3f4;
+      padding: 1em;
+      border-radius: 0.5em;
+      overflow-x: auto;
+      margin: 1em 0;
+    }
+    .prose pre code {
+      background-color: transparent;
+      padding: 0;
+    }
+    .prose blockquote {
+      border-left: 4px solid #30bde8;
+      padding-left: 1em;
+      margin: 1em 0;
+      font-style: italic;
+      color: #637f88;
+    }
+    .prose ul, .prose ol {
+      margin: 1em 0;
+      padding-left: 1.5em;
+    }
+    .prose li {
+      margin-bottom: 0.5em;
+    }
+    .prose a {
+      color: #30bde8;
+      text-decoration: underline;
+    }
+    .prose a:hover {
+      color: #0e181b;
+    }
+  </style>
+</head>
+<body>
+  <div class="relative flex size-full min-h-screen flex-col bg-[#f8fbfc] group/design-root overflow-x-hidden" style='font-family: Newsreader, "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+      <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+          {{CONTENT}}
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
